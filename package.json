@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:storybook": "vue-cli-service build:storybook -c config/storybook",
+    "serve:storybook": "vue-cli-service serve:storybook -p 6006 -c config/storybook"
   },
   "dependencies": {
     "vue": "^2.5.17",
@@ -15,12 +17,15 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "4.0.0-alpha.20",
+    "@storybook/addon-links": "4.0.0-alpha.20",
     "@vue/cli-plugin-babel": "^3.0.4",
     "@vue/cli-plugin-typescript": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "typescript": "^3.0.0",
+    "vue-cli-plugin-storybook": "^0.4.8",
     "vue-template-compiler": "^2.5.17"
   }
 }
