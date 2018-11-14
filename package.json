@@ -10,6 +10,7 @@
     "serve:storybook": "vue-cli-service serve:storybook -p 6006 -c config/storybook"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.5.17",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^7.0.0",
@@ -18,14 +19,23 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "4.0.0-alpha.20",
-    "@storybook/addon-links": "4.0.0-alpha.20",
+    "@storybook/addon-backgrounds": "^4.0.6",
+    "@storybook/addon-knobs": "^4.0.4",
+    "@storybook/addon-links": "^4.0.4",
+    "@storybook/addon-notes": "^4.0.4",
+    "@storybook/addon-options": "^4.0.4",
+    "@storybook/addon-viewport": "^4.0.4",
     "@vue/cli-plugin-babel": "^3.0.4",
     "@vue/cli-plugin-typescript": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.1",
+    "axios-mock-adapter": "^1.15.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "storybook-readme": "^4.0.2",
+    "storybook-vue-router": "^1.0.1",
     "typescript": "^3.0.0",
     "vue-cli-plugin-storybook": "^0.4.8",
+    "vue-markdown-loader": "^2.4.1",
     "vue-template-compiler": "^2.5.17"
   }
 }

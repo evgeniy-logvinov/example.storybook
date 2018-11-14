@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{name}}
+    {{resp}}
     <button class="button is-primary" @click="onClick">
       <slot></slot>
     </button>
@@ -8,18 +8,20 @@
 </template>
 
 <script>
-export default {
-  name: 'my-button',
+import axios from 'axios';
 
-  props: {
-    name: {
-      default: 'Jon Honor',
-      type: String,
-    },
+export default {
+  name: 'my-button-with-request',
+
+  data() {
+    return {
+      resp: 'empty',
+    };
   },
 
   methods: {
-    onClick() {
+    async onClick() {
+      this.resp = await axios.get('https://swapi.co/api/planets/1');
       this.$emit('click');
     },
   },
